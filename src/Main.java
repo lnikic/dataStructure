@@ -1,9 +1,19 @@
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        LinkedList<Integer> list = new LinkedList<>();
+        list.addFirst(10);
+        list.add(20);
+        list.removeLast();
+        LinkedListM mList = new LinkedListM();
+        mList.addLast(1);
+        mList.addLast(2);
+        mList.addFirst(3);
+        mList.removeLast();
+        System.out.println(mList.contains(2));
 
         new Main().go();
     }
